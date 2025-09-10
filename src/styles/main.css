@@ -1,0 +1,120 @@
+/* src/styles/main.css */
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+}
+
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 36px auto;
+  width: 80%;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: #1f2937;
+  padding: 10px 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+  justify-content: center;
+}
+.navbar li {
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 7px;
+  transition: background 0.2s;
+}
+.navbar li.active,
+.navbar li:hover {
+  background: #375a7f;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.filter-tabs button {
+  padding: 7px 18px;
+  border: none;
+  background: #e6e8ec;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.filter-tabs button.active {
+  background: #2d77ff;
+  color: #fff;
+}
+
+/* Applicant Table */
+.applicant-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+}
+.applicant-table th,
+.applicant-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: left;
+}
+
+/* Applicant Details Form */
+.details-form {
+  width: 80%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 16px 0;
+  background: #1f2937;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* Status Buttons */
+button.selected { background: #31c02f; color: #fff; }
+button.rejected { background: #ff5252; color: #fff; }
+button.in-process { background: #f6b93b; color: #222; }
+
+/* Export Button */
+button.export-btn {
+  background: #00B894;
+  color: #fff;
+  padding: 8px 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 12px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button.export-btn:hover {
+  background: #019262;
+}
