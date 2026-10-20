@@ -1,9 +1,9 @@
-import React from 'react';
-
 function Footer() {
   return (
-    <footer className="footer">
-      © 2025 Recruiter Management | VIT Vellore
+    <footer className="app-footer">
+      <div className="container">
+        Recruitment Management System &middot; Yash Mehta, VIT Vellore (academic project, 2025)
+      </div>
     </footer>
   );
 }
